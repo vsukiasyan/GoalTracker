@@ -16,6 +16,9 @@
 		6778DDA72095947E007D7F9B /* GoalTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDA62095947E007D7F9B /* GoalTrackerTests.swift */; };
 		6778DDB22095947E007D7F9B /* GoalTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDB12095947E007D7F9B /* GoalTrackerUITests.swift */; };
 		6778DDC420959BB7007D7F9B /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDC320959BB7007D7F9B /* GoalCell.swift */; };
+		6778DDC6209685DA007D7F9B /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDC5209685DA007D7F9B /* GoalType.swift */; };
+		6778DDC820968B9A007D7F9B /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDC720968B9A007D7F9B /* CreateGoalVC.swift */; };
+		6778DDCA20968D01007D7F9B /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDC920968D01007D7F9B /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		6778DDB12095947E007D7F9B /* GoalTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerUITests.swift; sourceTree = "<group>"; };
 		6778DDB32095947E007D7F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6778DDC320959BB7007D7F9B /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		6778DDC5209685DA007D7F9B /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		6778DDC720968B9A007D7F9B /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		6778DDC920968D01007D7F9B /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				6778DD902095947E007D7F9B /* GoalsVC.swift */,
+				6778DDC720968B9A007D7F9B /* CreateGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 		6778DDC1209594D2007D7F9B /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				6778DDC5209685DA007D7F9B /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 		6778DDC2209594E0007D7F9B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6778DDC920968D01007D7F9B /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,8 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6778DDC420959BB7007D7F9B /* GoalCell.swift in Sources */,
+				6778DDC820968B9A007D7F9B /* CreateGoalVC.swift in Sources */,
+				6778DDC6209685DA007D7F9B /* GoalType.swift in Sources */,
 				6778DD912095947E007D7F9B /* GoalsVC.swift in Sources */,
 				6778DD972095947E007D7F9B /* GoalTracker.xcdatamodeld in Sources */,
+				6778DDCA20968D01007D7F9B /* UIViewControllerExt.swift in Sources */,
 				6778DD8F2095947E007D7F9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
