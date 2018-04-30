@@ -423,27 +423,31 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="54" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-XQ-gM0">
                                         <rect key="frame" x="148" y="35" width="39" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="f7s-OL-8V0"/>
+                                        </constraints>
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="54"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="nbA-XQ-gM0" firstAttribute="top" secondItem="Dmn-hq-bv1" secondAttribute="bottom" constant="10" id="4gz-KD-DMz"/>
                                     <constraint firstAttribute="height" constant="110" id="8Wb-u7-9fg"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPM-Bd-epc">
-                                <rect key="frame" x="16" y="260" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-b2-IKD">
+                                <rect key="frame" x="16" y="728" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="vpY-SN-bky"/>
+                                    <constraint firstAttribute="height" constant="50" id="OIJ-AG-OAk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="CREATE GOAL">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createGoalBtnPressed:" destination="9wh-Mc-pay" eventType="touchUpInside" id="MYn-cD-xBR"/>
+                                    <action selector="createGoalBtnPressed:" destination="9wh-Mc-pay" eventType="touchUpInside" id="gYn-sv-bPc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -451,18 +455,18 @@
                         <constraints>
                             <constraint firstItem="Mdc-ri-k7M" firstAttribute="trailing" secondItem="zeA-m6-ffc" secondAttribute="trailing" constant="20" id="2vo-wP-Fv2"/>
                             <constraint firstItem="RS2-IQ-fhm" firstAttribute="trailing" secondItem="Mdc-ri-k7M" secondAttribute="trailing" id="8Pc-dp-xYw"/>
-                            <constraint firstItem="BPM-Bd-epc" firstAttribute="top" secondItem="zeA-m6-ffc" secondAttribute="bottom" constant="40" id="8bo-P7-1aY"/>
                             <constraint firstItem="zeA-m6-ffc" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" constant="20" id="LEE-8N-ZLc"/>
+                            <constraint firstItem="xVk-b2-IKD" firstAttribute="bottom" secondItem="Mdc-ri-k7M" secondAttribute="bottom" id="bWv-Hb-vap"/>
                             <constraint firstItem="RS2-IQ-fhm" firstAttribute="top" secondItem="kyO-rN-q1p" secondAttribute="top" id="bfL-Pc-oFc"/>
+                            <constraint firstItem="Mdc-ri-k7M" firstAttribute="trailing" secondItem="xVk-b2-IKD" secondAttribute="trailing" constant="16" id="eza-qw-aAC"/>
                             <constraint firstItem="RS2-IQ-fhm" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" id="gqP-LW-ijz"/>
-                            <constraint firstItem="Mdc-ri-k7M" firstAttribute="trailing" secondItem="BPM-Bd-epc" secondAttribute="trailing" constant="16" id="ldH-Ov-RU0"/>
-                            <constraint firstItem="BPM-Bd-epc" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" constant="16" id="si4-c3-VUT"/>
+                            <constraint firstItem="xVk-b2-IKD" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" constant="16" id="uIL-Pa-azK"/>
                             <constraint firstItem="zeA-m6-ffc" firstAttribute="top" secondItem="RS2-IQ-fhm" secondAttribute="bottom" constant="20" id="xZU-Hi-DQZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mdc-ri-k7M"/>
                     </view>
                     <connections>
-                        <outlet property="createGoalBtn" destination="BPM-Bd-epc" id="AEu-O5-MM9"/>
+                        <outlet property="createGoalBtn" destination="xVk-b2-IKD" id="SzZ-Vk-p8z"/>
                         <outlet property="pointsTxtField" destination="nbA-XQ-gM0" id="6fu-Oi-af1"/>
                     </connections>
                 </viewController>
