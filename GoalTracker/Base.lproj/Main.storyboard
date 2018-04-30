@@ -421,7 +421,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="54" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-XQ-gM0">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-XQ-gM0">
                                         <rect key="frame" x="148" y="35" width="39" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="f7s-OL-8V0"/>
@@ -436,31 +436,43 @@
                                     <constraint firstAttribute="height" constant="110" id="8Wb-u7-9fg"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-b2-IKD">
-                                <rect key="frame" x="16" y="728" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUX-yH-cMb">
+                                <rect key="frame" x="16" y="230" width="343" height="548"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-b2-IKD">
+                                        <rect key="frame" x="0.0" y="498" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OIJ-AG-OAk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="CREATE GOAL">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createGoalBtnPressed:" destination="9wh-Mc-pay" eventType="touchUpInside" id="gYn-sv-bPc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="OIJ-AG-OAk"/>
+                                    <constraint firstAttribute="bottom" secondItem="xVk-b2-IKD" secondAttribute="bottom" id="43k-Ks-SCn"/>
+                                    <constraint firstItem="xVk-b2-IKD" firstAttribute="leading" secondItem="oUX-yH-cMb" secondAttribute="leading" id="G2R-hV-EG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="xVk-b2-IKD" secondAttribute="trailing" id="goo-PX-fe7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="CREATE GOAL">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="createGoalBtnPressed:" destination="9wh-Mc-pay" eventType="touchUpInside" id="gYn-sv-bPc"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Mdc-ri-k7M" firstAttribute="trailing" secondItem="zeA-m6-ffc" secondAttribute="trailing" constant="20" id="2vo-wP-Fv2"/>
+                            <constraint firstItem="oUX-yH-cMb" firstAttribute="bottom" secondItem="Mdc-ri-k7M" secondAttribute="bottom" id="6xn-W1-Vjv"/>
                             <constraint firstItem="RS2-IQ-fhm" firstAttribute="trailing" secondItem="Mdc-ri-k7M" secondAttribute="trailing" id="8Pc-dp-xYw"/>
+                            <constraint firstItem="oUX-yH-cMb" firstAttribute="top" secondItem="zeA-m6-ffc" secondAttribute="bottom" constant="10" id="IB3-v1-lcg"/>
                             <constraint firstItem="zeA-m6-ffc" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" constant="20" id="LEE-8N-ZLc"/>
-                            <constraint firstItem="xVk-b2-IKD" firstAttribute="bottom" secondItem="Mdc-ri-k7M" secondAttribute="bottom" id="bWv-Hb-vap"/>
+                            <constraint firstItem="Mdc-ri-k7M" firstAttribute="trailing" secondItem="oUX-yH-cMb" secondAttribute="trailing" constant="16" id="TkU-VG-Z4H"/>
                             <constraint firstItem="RS2-IQ-fhm" firstAttribute="top" secondItem="kyO-rN-q1p" secondAttribute="top" id="bfL-Pc-oFc"/>
-                            <constraint firstItem="Mdc-ri-k7M" firstAttribute="trailing" secondItem="xVk-b2-IKD" secondAttribute="trailing" constant="16" id="eza-qw-aAC"/>
                             <constraint firstItem="RS2-IQ-fhm" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" id="gqP-LW-ijz"/>
-                            <constraint firstItem="xVk-b2-IKD" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" constant="16" id="uIL-Pa-azK"/>
+                            <constraint firstItem="oUX-yH-cMb" firstAttribute="leading" secondItem="Mdc-ri-k7M" secondAttribute="leading" constant="16" id="jlf-xE-pNN"/>
                             <constraint firstItem="zeA-m6-ffc" firstAttribute="top" secondItem="RS2-IQ-fhm" secondAttribute="bottom" constant="20" id="xZU-Hi-DQZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mdc-ri-k7M"/>
